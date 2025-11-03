@@ -30,6 +30,12 @@ public class LottoInputHandler {
                 .collect(Collectors.toList());
     }
 
+    public int inputBonusNumber() {
+        System.out.println("보너스 번호를 입력해 주세요.");
+        String input = Console.readLine();
+        return Integer.parseInt(input.trim());
+    }
+
     private int validatePurchaseAmount(String input) {
         validateNotEmpty(input);
         int amount = parseToInt(input);
