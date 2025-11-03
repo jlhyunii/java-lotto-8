@@ -22,6 +22,6 @@ public class Application {
         List<Integer> winningNumbers = lottoInputHandler.inputWinningNumbers();
 
         System.out.println();
-        int bonusNumber = lottoInputHandler.inputBonusNumber();
+        int bonusNumber = lottoInputHandler.inputBonusNumber(winningNumbers);
     }
 }
