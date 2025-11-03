@@ -17,5 +17,8 @@ public class Application {
         System.out.println();
         System.out.println((purchaseAmount / 1000) + "개를 구매했습니다.");
         lottos.forEach(System.out::println);
+
+        System.out.println();
+        List<Integer> winningNumbers = lottoInputHandler.inputWinningNumbers();
     }
 }
